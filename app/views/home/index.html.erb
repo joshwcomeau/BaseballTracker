@@ -5,11 +5,12 @@
     <span class="arrow-right" ng-click="home.next_day(1)"><i class="fa fa-chevron-right"></i></span>
   </header>
   <div class="date-picker">
+    Enter a date:
     <%= form_tag("/", method: :get) do %>
-      <%= text_field_tag "year", '', placeholder: 'year' %>
-      <%= text_field_tag "month", '', placeholder: 'month' %>
       <%= text_field_tag "day", '', placeholder: 'day' %>
-      <%= submit_tag %>
+      <%= text_field_tag "month", '', placeholder: 'month' %>
+      <%= text_field_tag "year", '', placeholder: 'year' %>
+      <%= submit_tag "Go" %>
     <% end %>
   </div>
 

@@ -11,6 +11,8 @@ body {
   background: #CCC;
 }
 .content-wrapper {
+  position: relative;
+  margin: 0 auto;
   width: $width;
   background: #FFF;
 }
@@ -61,10 +63,13 @@ li {
 
 .date-picker {
   text-align: center;
+  padding: 1rem;
+  background: #EEE;
 
   input[type="text"] {
-    width: 90px;
-    padding-right: 10px;
+    width: 75px;
+    padding: 0.5rem;
+    text-align: center;
   }
 
   input[type="submit"] {
